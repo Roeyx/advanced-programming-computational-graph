@@ -22,15 +22,16 @@ When the server boots, it automatically opens your default browser at http://loc
 
 ## 🚀 First Flight
 
-![image](https://github.com/user-attachments/assets/ab8cf41c-ac34-4cb5-b138-0220529ee2d2)
-
 Click on Choose file
 
+![image](https://github.com/user-attachments/assets/ab8cf41c-ac34-4cb5-b138-0220529ee2d2)
 
 Pick a blueprint (.config).
+
 ![image](https://github.com/user-attachments/assets/0a4d862a-9cde-41e1-9fb0-2b068b1400ed)
 
 Hit Deploy to instantiate nodes and connectors.
+
 ![image](https://github.com/user-attachments/assets/235ff643-a0ee-4228-9360-70999cc2f755)
 
 A canvas appears—zoom with the mouse wheel, drag to reposition, click any node to inspect its formula. The visual layer relies on the vis-network component of vis.js for instant layout updates.
