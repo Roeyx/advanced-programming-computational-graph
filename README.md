@@ -45,7 +45,7 @@ Once values are submitted to the topics, a chart displaying the updated topic va
 
 ![image](https://github.com/user-attachments/assets/53767120-6db0-4b8e-903e-50e68473792a)
 
-Clicking the Show Equations button opens a new window that displays a comprehensive chart detailing all the computed equations and their current results.
+Clicking the Show Equations button opens a new window in the url http://localhost:8080/features/eval that displays a comprehensive chart detailing all the computed equations and their current results.
 
 ![image](https://github.com/user-attachments/assets/9de41543-a40a-4e04-a766-e0fcf88515ca)
 
