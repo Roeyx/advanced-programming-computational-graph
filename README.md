@@ -40,6 +40,16 @@ A canvas appears—zoom with the mouse wheel, drag to reposition, click any node
 
 
 Use the side panel to broadcast new numbers to any topic; changes propagate through every downstream agent instantly. Agents execute inside lightweight workers, similar to micro-servlets, ensuring isolation and responsiveness.
+
+Once values are submitted to the topics, a chart displaying the updated topic values will appear on the right side of the screen.
+
+![image](https://github.com/user-attachments/assets/53767120-6db0-4b8e-903e-50e68473792a)
+
+Clicking the Show Equations button opens a new window that displays a comprehensive chart detailing all the computed equations and their current results.
+
+![image](https://github.com/user-attachments/assets/9de41543-a40a-4e04-a766-e0fcf88515ca)
+
+
 ## 📂 Blueprint Grammar
 | Class           | Math rule | Streams consumed | Stream produced |
 | --------------- | --------- | ---------------- | --------------- |
