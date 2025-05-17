@@ -24,6 +24,9 @@ Path\advanced-programming-computational-graph\src\project_biu\Main.java
 
 When the server boots, it automatically opens your default browser at http://localhost:8080/app/index.html/ where the UI lives.
 
+a download link for openjdk is attached here https://www.openlogic.com/openjdk-downloads
+we used the version 22.0.2+9.zip for windows x86 64-bit	 
+
 ## 🚀 First Flight
 
 Click on Choose file
