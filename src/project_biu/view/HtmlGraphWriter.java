@@ -32,7 +32,7 @@ public class HtmlGraphWriter {
         Path currentDir = Paths.get(System.getProperty("user.dir"));
 
         // Construct the path to the HTML template relative to the current directory
-        Path templatePath = currentDir.resolve("AdvancedProgrammingProject/html_files/graph.html");
+        Path templatePath = currentDir.resolve("html_files/graph.html");
         String template = Files.readString(templatePath, StandardCharsets.UTF_8);
 
         // Generate JavaScript array for nodes with coordinates and messages if they exist
