@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/eac07bb4-15cd-4160-863e-61894bcf9080
+
 # Computational Graph ― Reactive Data-Flow Sandbox
 
 A lightweight Java/HTTP playground that lets you upload a “config” file, spin up cooperating math agents, and watch their values ripple across a browser-rendered network in real time.
