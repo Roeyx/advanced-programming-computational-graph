@@ -17,7 +17,7 @@ public class Main {
         server.addServlet("GET", "/publish", new TopicDisplayer());
         server.addServlet("POST", "/upload", new ConfLoader());
         server.addServlet("GET","/features", new FeaturesHandler());
-        server.addServlet("GET", "/app/", new HtmlLoader("AdvancedProgrammingProject/html_files/"));
+        server.addServlet("GET", "/app/", new HtmlLoader("html_files"));
         server.start();
 
         // Let server get start
