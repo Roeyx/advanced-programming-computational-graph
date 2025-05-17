@@ -63,5 +63,17 @@ Clicking the Show Equations button opens a new window in the url http://localhos
 | `DivAgent`      | `x / y`   | 2                | 1               |
 | `ExponentAgent` | `x ^ y`   | 2                | 1               |
 
+🔍 Inspect Individual Node Equations
+Click on any node within the graph to reveal its specific equation, providing insight into its computational role.
+
+📊 Display All Equations and Results
+Select the Show Equations option to open a new window presenting a comprehensive chart of all node equations along with their current computed results.
+
+🔎 Zoom Functionality
+Utilize your mouse wheel or trackpad gestures to smoothly zoom in and out, allowing for detailed examination or an overview of the entire graph.
+
+🧭 Navigate and Rearrange the Graph
+Click and drag nodes to reposition them, enabling you to customize the layout for better visualization and understanding of the graph's structure.
+
 
 
