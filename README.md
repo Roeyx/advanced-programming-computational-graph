@@ -17,6 +17,10 @@ If java is not on PATH
 ```bash
 Path\openlogic-openjdk-22.0.2+9-windows-x64\bin\java.exe Path\advanced-programming-computational-graph\src\project_biu\Main.java
 ```
+if java is on PATH
+```bash
+Path\advanced-programming-computational-graph\src\project_biu\Main.java
+```
 
 When the server boots, it automatically opens your default browser at http://localhost:8080/app/index.html/ where the UI lives.
 
