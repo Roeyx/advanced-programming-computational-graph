@@ -16,6 +16,7 @@ Compile & Launch
 If java is not on PATH
 ```bash
 Path\openlogic-openjdk-22.0.2+9-windows-x64\bin\java.exe Path\AdvancedProgrammingProject\src\project_biu\Main.java
+```
 
 Java 11+ lets you run a single source file directly, so no explicit javac step is required.
 
