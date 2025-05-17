@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Form</title>
+
+    <!-- Modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --clr-bg: #f5f7fa;
+            --clr-card: #ffffff;
+            --clr-primary: #1c7ed6;
+            --clr-primary-light: #4dabf7;
+            --clr-border: #dee2e6;
+            --radius: 10px;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 32px 16px;
+            background: var(--clr-bg);
+            font-family: "Inter", sans-serif;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--clr-card);
+            padding: 32px 28px;
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius);
+            box-shadow: 0 6px 20px rgba(0,0,0,.07);
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #212529;
+        }
+
+        label { font-weight: 600; }
+
+        input[type="file"],
+        input[type="text"],
+        button {
+            width: 100%;
+            font-size: 1rem;
+            padding: 12px 14px;
+            margin: 10px 0 18px;
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius);
+        }
+
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            outline: none;
+            border-color: var(--clr-primary);
+            box-shadow: 0 0 0 2px rgba(28,126,214,.15);
+        }
+
+        button {
+            background: var(--clr-primary);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background .2s ease;
+        }
+        button:hover { background: var(--clr-primary-light); }
+    </style>
+
+    <script>
+        function restartParentPage() {
+            if (window.top !== window.self) {
+                window.top.location.reload();
+            } else {
+                window.location.reload();
+            }
+        }
+    </script>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector('form[action$="/publish"]');
+        form.addEventListener("submit", function () {
+            // Wait for the form to submit before clearing
+            setTimeout(() => {
+                form.topic.value = "";
+                form.message.value = "";
+            }, 100);
+        });
+    });
+</script>
+<body>
+<div class="form-container">
+    <form action="http://localhost:8080/upload" method="post" enctype="multipart/form-data" target="graphFrame">
+        <h1>Upload Configuration File</h1>
+        <label for="configFile">Choose file:</label>
+        <input type="file" id="configFile" name="configFile" required>
+        <button type="submit">Deploy</button>
+    </form>
+
+    <form action="http://localhost:8080/publish" method="get" target="topicTableFrame">
+        <h1>Send Message&nbsp;to&nbsp;Topic</h1>
+
+        <label for="topic">Topic&nbsp;name</label>
+        <input type="text" id="topic" name="topic" required>
+
+        <label for="message">Message</label>
+        <input type="text" id="message" name="message" required>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <form action="http://localhost:8080/features/eval" method="get" target="_blank">
+        <button type="submit">Show Equations</button>
+    </form>
+</div>
+</body>
+</html>
