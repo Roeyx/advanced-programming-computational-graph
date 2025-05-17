@@ -36,7 +36,6 @@ Hit Deploy to instantiate nodes and connectors.
 
 A canvas appears—zoom with the mouse wheel, drag to reposition, click any node to inspect its formula. The visual layer relies on the vis-network component of vis.js for instant layout updates.
 
-![image](https://github.com/user-attachments/assets/fea13a46-32ae-4cc1-93fa-8969191480f5)
 ![image](https://github.com/user-attachments/assets/53b9fe7d-a86a-43e5-8695-9372feb4501d)
 
 
