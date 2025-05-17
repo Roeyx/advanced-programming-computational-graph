@@ -20,7 +20,7 @@ Java 11+ lets you run a single source file directly, so no explicit javac step i
 
 When the server boots, it automatically opens your default browser at http://localhost:8080/app/ where the UI lives.
 
-🚀 First Flight
+## 🚀 First Flight
 
 Pick a blueprint (.txt or .cfg).
 
@@ -29,7 +29,7 @@ Hit Deploy to instantiate nodes and connectors.
 A canvas appears—zoom with the mouse wheel, drag to reposition, click any node to inspect its formula. The visual layer relies on the vis-network component of vis.js for instant layout updates.
 
 Use the side panel to broadcast new numbers to any topic; changes propagate through every downstream agent instantly. Agents execute inside lightweight workers, similar to micro-servlets, ensuring isolation and responsiveness.
-📂 Blueprint Grammar
+## 📂 Blueprint Grammar
 | Class           | Math rule | Streams consumed | Stream produced |
 | --------------- | --------- | ---------------- | --------------- |
 | `IncAgent`      | `x + 1`   | 1                | 1               |
